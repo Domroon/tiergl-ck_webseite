@@ -1,0 +1,31 @@
+:root {
+    --primary-color: chocolate;
+    --secondary-color: peru;
+    --dark-color: saddlebrown;
+    --light-color: burlywood;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid > div {
+    height: 300px;
+}
+
+.colorbox1 {
+    background-color: var(--primary-color);
+}
+
+.colorbox2 {
+    background-color: var(--secondary-color);
+}
+
+.colorbox3 {
+    background-color: var(--dark-color);
+}
+
+.colorbox4 {
+    background-color: var(--light-color);
+}
