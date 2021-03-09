@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
 :root {
     --primary-color: chocolate;
     --secondary-color: peru;
     --dark-color: saddlebrown;
     --light-color: burlywood;
+    --my-orange: rgb(255, 141, 10);
+}
+
+body {
+    font-family: 'Stick', sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar .flex {
+    
 }
 
 .grid {
@@ -14,18 +35,23 @@
     height: 300px;
 }
 
-.colorbox1 {
-    background-color: var(--primary-color);
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.colorbox2 {
-    background-color: var(--secondary-color);
+.colorbox {
+    background-color: var(--my-orange);
 }
 
-.colorbox3 {
-    background-color: var(--dark-color);
+.fas {
+    color:var(--primary-color);
+    font-size: 100px;
+    transition: 0.15s ease-in;
 }
 
-.colorbox4 {
-    background-color: var(--light-color);
+.fas:hover {
+    color: var(--dark-color);
+    font-size: 120px;
 }
