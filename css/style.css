@@ -8,50 +8,120 @@
     --my-orange: rgb(255, 141, 10);
 }
 
-body {
-    font-family: 'Stick', sans-serif;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-/* Navbar */
+body {
+    font-family: 'Stick', sans-serif;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    width: 10px 0;
+}
+
+img {
+    width: 100%;
+}
 
 .navbar {
     background-color: var(--primary-color);
+    height: 80px;
 }
 
 .navbar ul {
     display: flex;
 }
 
-.navbar .flex {
-    
+.navbar a {
+    font-size: 1.5em;
+    margin: 30px;
+    padding: 10px;
+    transition: 0.2s ease;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.navbar a:hover {
+    font-size: 1.6em;
+    border-bottom: 2px solid #333;
 }
 
-.grid > div {
-    height: 300px;
-}
-
-.box {
-    display: flex;
+.container {
+    max-width: 1100px;
     align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
 }
 
-.colorbox {
-    background-color: var(--my-orange);
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 
-.fas {
-    color:var(--primary-color);
-    font-size: 100px;
-    transition: 0.15s ease-in;
+/* Tablets and under */
+@media(max-width: 768px){
+
 }
 
-.fas:hover {
-    color: var(--dark-color);
-    font-size: 120px;
+/* Mobile */
+@media(max-width: 500px){
+    body{
+        color:white;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        height: 300px;
+    }
+
+    .navbar ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .navbar li {
+        padding: 5px;
+    }
+
+    .navbar a {
+        padding: 0;
+        color: white
+    }
+
+    .navbar a:hover {
+        font-size: 1.7em;
+        border: none;
+    }
+
+    .container {
+        max-width: 500px;
+        align-items: center;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 0 40px;
+    }
+
 }
