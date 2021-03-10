@@ -90,15 +90,33 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     overflow: visible;
+    margin: 20px;
+}
+
+.box {
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box .fas {
+    font-size: 6rem;
 }
 
 .showcase-box {
-    align-items: end;
     background-color: var(--secondary-color);
-    width: 300px;
+    max-width: 300px;
     height: 300px;
     margin: 10px;
 }
+
+.showcase-box:hover {
+    color: white;
 
 /* Tablets and under */
 @media(max-width: 768px){
