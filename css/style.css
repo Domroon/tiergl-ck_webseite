@@ -119,6 +119,38 @@ img {
 
 .showcase-box:hover {
     color: white;
+}
+
+/* Description */
+.card {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+}
+
+.description .flex {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.description img {
+    width: 500px;
+    margin: 50px;
+    margin-right: 0px;
+    border: 10px var(--secondary-color) inset;
+    border-radius: 20px;
+}
+
+.description .container {
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.description .container h2 {
+    margin-bottom: 20px;
+}
+
+
 
 /* Tablets and under */
 @media(max-width: 768px){
