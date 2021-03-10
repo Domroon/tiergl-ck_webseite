@@ -20,3 +20,5 @@
 - little animations fading e.g. the pictures in (from white to dark)
 
 - cards with shadow or border for text?
+
+- move dogs, cats, horses, chicken or something else
