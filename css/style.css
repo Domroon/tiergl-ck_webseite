@@ -172,6 +172,41 @@ img {
     justify-self: end;
 }
 
+/* News */
+.news{
+    display: grid;
+    max-width: 1000px;
+    margin: 25px auto;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news-content {
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.news-card {
+    margin: 10px;
+    background-color: var(--my-orange);
+}
+
+.news-card .header {
+    display: flex;
+    margin-bottom: 10px;
+    background-color: grey;
+}
+
+.news-card .content {
+    padding: 10px;
+}
+
+.news-card .header p {
+    padding: 10px;
+}
+
 /* Footer */
 footer {
     display: flex;
