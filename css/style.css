@@ -40,7 +40,7 @@ h2 {
 }
 
 p {
-    width: 10px 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 img {
@@ -172,8 +172,22 @@ img {
     justify-self: end;
 }
 
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+}
 
+footer i{
+    font-size: 2em;
+}
 
+footer i:hover{
+    color: #4267B2;
+}
 /* Tablets and under */
 @media(max-width: 768px){
 
