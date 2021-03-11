@@ -39,12 +39,17 @@ h2 {
     font-size: 2em;
 }
 
+h3 {
+    margin-bottom: 10px;
+}
+
 p {
     font-family: Helvetica, Arial, sans-serif;
 }
 
 img {
     width: 100%;
+    border-radius: 10px;
 }
 
 
@@ -288,6 +293,41 @@ footer i{
 footer i:hover{
     color: white;
 }
+
+
+/* Dogs */
+.dog-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.dog-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dog-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.dog-card .char {
+    margin: 20px;
+}
+
+.dog-card .image-box {
+    margin: 20px;
+    width: 400px;
+    max-height: 275px;
+}
+
+
 /* Tablets and under */
 @media(max-width: 768px){
 
