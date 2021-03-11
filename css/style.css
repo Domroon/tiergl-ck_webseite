@@ -235,12 +235,18 @@ footer {
     padding: 20px;
 }
 
+footer .social {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+
 footer i{
     font-size: 2em;
 }
 
 footer i:hover{
-    color: #4267B2;
+    color: white;
 }
 /* Tablets and under */
 @media(max-width: 768px){
