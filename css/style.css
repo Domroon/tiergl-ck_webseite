@@ -298,18 +298,20 @@ footer i:hover{
 /* Dogs */
 .dog-main {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     justify-items: center;
 }
 
 .dog-flex {
     display: flex;
     flex-wrap: wrap;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 .dog-card {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     align-items: center;
     margin: 20px;
     padding: 10px;
@@ -318,7 +320,15 @@ footer i:hover{
 }
 
 .dog-card .char {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: 20px;
+    gap: 10px;
+}
+
+.dog-card .dog-name {
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 .dog-card .image-box {
