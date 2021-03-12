@@ -306,6 +306,7 @@ footer i:hover{
     padding-right: 25px;
     padding-left: 25px;
     border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .employee-card > .image-box {
