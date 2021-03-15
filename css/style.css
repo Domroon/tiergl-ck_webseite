@@ -329,33 +329,22 @@ footer i:hover{
 }
 
 /* Animals */
-.animal-main {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    justify-items: center;
-    margin: 20px;
-    margin-bottom: 100px;
-}
-
-.animal-main >:first-child {
-    grid-column: 1/4;
-}
 .animal-main h2{
     margin:30px;
 }
 
-.animal-flex {
-    display: flex;
-    flex-wrap: wrap;
-    grid-column-start: 2;
-    grid-column-end: 3;
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 50px;
 }
 
 .animal-card {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    margin: 20px;
     padding: 10px;
     background-color: var(--secondary-color);
     border-radius: 10px;
