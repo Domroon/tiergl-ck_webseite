@@ -59,6 +59,12 @@ img {
     background-color: var(--primary-color);
     height: 80px;
     color: white;
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
 }
 
 .navbar ul {
@@ -103,10 +109,11 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1000px;
-    margin: 25px auto;
-    margin-top: 50px;
+    margin: 150px auto;
     justify-content: center;
     gap: 50px;
+    position: relative;
+    z-index: 0;
 }
 
 .main-grid >:first-child {
