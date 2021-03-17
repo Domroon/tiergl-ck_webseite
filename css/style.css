@@ -39,9 +39,6 @@ h2 {
     font-size: 2em;
 }
 
-h3 {
-    margin: 20px 0 0 20px;
-}
 
 p {
     font-family: Helvetica, Arial, sans-serif;
@@ -198,6 +195,10 @@ img {
     color: var(--dark-color);
 }
 
+.news h3 {
+    margin: 20px 0 0 20px;
+}
+
 .news-content {
     background-color: var(--secondary-color);
     border-radius: 10px;
@@ -347,6 +348,7 @@ footer i:hover{
     align-items: center;
     padding: 10px;
     background-color: var(--secondary-color);
+    border: black solid 2px;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
